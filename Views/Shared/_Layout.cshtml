@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - subpesca</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/subpesca.styles.css" asp-append-version="true" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>Sidebar template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link href="~/css/header.css" rel="stylesheet" />
+    <link href="~/css/sidebar.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <div class="header-base">
+            <div class="titulo-colores">
+                <div class="colores">
+                    <div class="color-azul"></div>
+                    <div class="color-rojo"></div>
+                </div>
+                <div class="titulo">ASIPA</div>
+            </div>
+            <div class="seccion-usuario">
+                <div class="cuadro-usuario">
+                    <div class="icono-usuario-div">
+                        <div class="icono-usuario"></div>
+                    </div>
+                    <div class="nombre-usuario">Gabriela Perez</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+                    @*                     <div >
+                        <i class="fas fa-bars"></i>
+                    </div> *@
+                    <div id="close-sidebar" class="fas fa-bars" style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                        <div  style="color: white; font-size: 12px; font-family: Inter; font-weight: 400; line-height: 18px; word-wrap: break-word">Acoplar Menú</div>
+                    </div>
+                </div>
+
+                <div style="width: 100%; height: 100%; padding: 16px; background: #074B91; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 48px; display: inline-flex">
+                    <div style="align-self: stretch; height: 376px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 48px; display: flex">
+                        
+                        <div style="align-self: stretch; height: 80px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                            <div style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: rgba(255, 255, 255, 0.08); border-radius: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <div  style="width: 20px; height: 18.75px; left: 2px; top: 2.25px; position: absolute; border: 2px white solid"></div>
+                                </div>
+                                <div  style="color: white; font-size: 12px; font-family: Inter; font-weight: 700; line-height: 18px; word-wrap: break-word">Home</div>
+                            </div>
+                        </div>
+
+                        <div style="align-self: stretch; height: 248px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                            <div style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <div style="width: 20px; height: 18px; left: 2px; top: 3px; position: absolute; border: 2px white solid"></div>
+                                </div>
+                                <div style="color: white; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Convenios</div>
+                            </div>
+                            <div style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <div style="width: 20px; height: 18px; left: 2px; top: 3px; position: absolute; border: 2px white solid"></div>
+                                </div>
+                                <div style="color: white; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Estudios</div>
+                            </div>
+                            <div style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <div style="width: 16px; height: 20px; left: 4px; top: 2px; position: absolute; border: 2px white solid"></div>
+                                </div>
+                                <div style="color: white; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Hitos</div>
+                            </div>
+                            <div style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <div style="width: 19.33px; height: 19.33px; left: 2.50px; top: 2.17px; position: absolute; border: 2px white solid"></div>
+                                </div>
+                                <div style="color: white; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Solicitudes</div>
+                            </div>
+                            <div style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <div style="width: 16px; height: 18px; left: 4px; top: 3px; position: absolute; border: 2px white solid"></div>
+                                </div>
+                                <div style="color: white; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">
+                                    Administración
+                                    de Usuarios
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @*                 <div class="sidebar-menu">
+                    <ul>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-tachometer-alt"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>Convenios</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>Estudios</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-chart-line"></i>
+                                <span>Hitos</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-globe"></i>
+                                <span>Solicitudes</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-globe"></i>
+                                <span>Administración de Usuarios</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div> *@
+
+            </div>
+        </nav>
+
+        <main class="page-content">
+            <div class="container-fluid">
+
+                @RenderBody()
+
+                <footer class="text-center">
+
+                </footer>
+            </div>
+        </main>
+
+    </div>
+
+    <footer class="border-top footer text-muted">
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+
+            $(".sidebar-dropdown > a").click(function () {
+                $(".sidebar-submenu").slideUp(200);
+                if (
+                    $(this)
+                        .parent()
+                        .hasClass("active")
+                ) {
+                    $(".sidebar-dropdown").removeClass("active");
+                    $(this)
+                        .parent()
+                        .removeClass("active");
+                } else {
+                    $(".sidebar-dropdown").removeClass("active");
+                    $(this)
+                        .next(".sidebar-submenu")
+                        .slideDown(200);
+                    $(this)
+                        .parent()
+                        .addClass("active");
+                }
+            });
+
+            $("#close-sidebar").click(function () {
+                $(".page-wrapper").removeClass("toggled");
+            });
+            $("#show-sidebar").click(function () {
+                $(".page-wrapper").addClass("toggled");
+            });
+
+
+
+
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
